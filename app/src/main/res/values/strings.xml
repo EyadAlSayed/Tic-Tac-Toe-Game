@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">XO</string>
+    <string name="player_window">Player Window</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="player_one">Player One</string>
+    <string name="player_two">Player Two</string>
+    <string name="go">Go</string>
+    <string name="player_turn">Player Turn</string>
+    <string name="multi_player_mode">Multi Player Mode</string>
+    <string name="o">O</string>
+    <string name="x">X</string>
+    <string name="reset">Reset</string>
+    <string name="game_state">Game State</string>
+</resources>

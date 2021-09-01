@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/purple_gradient_bg">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_380sdp"
+        android:background="@drawable/player_view_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="@dimen/_81sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_75sdp"
+            android:layout_marginEnd="@dimen/_75sdp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:src="@drawable/tic_tac_toe" />
+
+        <TextView
+            android:layout_width="@dimen/_208sdp"
+            android:layout_height="@dimen/_53sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_315sdp"
+            android:text="@string/tic_tac_toe"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_30ssp" />
+
+        <EditText
+            android:id="@+id/player_one"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_27sdp"
+            android:layout_marginTop="@dimen/_190sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_150sdp"
+            android:autofillHints="Player One"
+            android:textSize="@dimen/_13ssp"
+            android:background="@drawable/player_view_shape"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="@dimen/_9sdp"
+            android:enabled="false"
+            android:hint="@string/player_one"
+            android:paddingStart="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/player_two"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_27sdp"
+            android:layout_marginTop="@dimen/_240sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:background="@drawable/player_view_shape"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="@dimen/_9sdp"
+            android:hint="@string/player_two"
+            android:textSize="@dimen/_13ssp"
+            android:enabled="false"
+            android:paddingStart="@dimen/_10sdp" />
+
+        <Button
+            android:id="@+id/go_btn"
+            android:layout_width="@dimen/_91sdp"
+            android:layout_height="@dimen/_82sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_290sdp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/circle_shape"
+            android:text="@string/go"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginBottom="@dimen/_32sdp"
+            android:background="@drawable/rounded_left_side"
+            android:gravity="center"
+            android:text="@string/x"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_19ssp" />
+
+        <TextView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_32sdp"
+            android:background="@drawable/rounder_right_shape"
+            android:gravity="center"
+            android:text="@string/o"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_19ssp" />
+
+        <Switch
+            android:id="@+id/player_mode_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:layout_marginEnd="@dimen/_38sdp"
+            android:text="@string/multi_player_mode"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
